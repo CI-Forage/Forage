@@ -56,7 +56,7 @@ export default class Quiz {
 }
 
 export const quizzes: Quiz[] = []
-quizData.quizzes.forEach(quiz => quizzes.push(new Quiz(quiz)));
+quizData.quizzes.forEach((quiz: any) => quizzes.push(new Quiz(quiz)));
 
 export interface Answer {
     text: string;
